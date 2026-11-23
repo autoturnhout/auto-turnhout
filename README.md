@@ -113,7 +113,7 @@ Elke wagen heeft een eigen pagina: `wagen/<id>/`, bijvoorbeeld `wagen/skoda-kodi
 - De sync maakt die pagina's na elke run opnieuw (`sync/build-pages.mjs`), met `index.html` als sjabloon. Header, footer, menu's en formulieren zijn dus altijd dezelfde als op de homepage.
 - Een gedeelde link toont op WhatsApp en Facebook de foto, naam en prijs van de wagen. Google kan elke wagen apart vinden (titel, beschrijving en `Car`-gegevens per pagina, plus `sitemap.xml` en `robots.txt`).
 - Is een wagen verkocht, dan wordt zijn pagina een korte "verkocht"-pagina met een link naar het aanbod. Oude links blijven zo werken.
-- Vul in `sync/config.json` bij `siteUrl` het echte adres van de website in (nu `https://www.autoturnhout.be`). Dat adres komt in de sitemap en in de voorvertoning van gedeelde links.
+- In `sync/config.json` staat bij `siteUrl` het adres van de website (nu het testadres `https://ilyasbenamer007-wq.github.io/auto-turnhout`; bij de livegang wordt dat `https://www.autoturnhout.be`). Dat adres komt in de sitemap en in de voorvertoning van gedeelde links.
 - Met de hand opnieuw bouwen: `node sync/build-pages.mjs`
 
 Op de homepage opent een wagen nog altijd snel in een venster; daar staat ook de link "Volledige pagina". Foto's openen op volledig scherm (vegen, dubbeltikken of knijpen om in te zoomen). Onder elke wagen staan vergelijkbare wagens en de wagens die de bezoeker onlangs bekeek (alleen op zijn eigen toestel bewaard).
