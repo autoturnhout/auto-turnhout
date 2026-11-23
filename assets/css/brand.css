@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Auto Turnhout, huisstijl: de kleuren, letters en sfeer van zijn vorige site
+   (antraciet, bordeaux, warm gebroken wit; Barlow en Barlow Condensed).
+   Wordt als laatste geladen, na styles.css en v2.css.
+   De variabele --blue is de accentkleur van de site: hier bordeaux.
+   ========================================================================== */
+:root {
+  --bg: #f4f2ef;
+  --bg-soft: #ebe8e2;
+  --bg-soft-2: #e1ded7;
+  --line: #e2dfd9;
+  --line-strong: #cbc7bf;
+  --text: #2a2c30;
+  --text-2: #45484e;
+  --muted: #5a5e66;
+  --muted-2: #7d8189;
+  --blue: #8a1e3b;
+  --blue-2: #711730;
+  --blue-soft: #f3e3e7;
+  --blue-ring: rgba(138, 30, 59, .18);
+  --rose: #e7b3c0;
+  --ink: #2a2c30;
+  --ink-2: #1d1f22;
+  --green: #1e7a45;
+  --green-soft: #eef6f0;
+  --font: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Barlow Condensed', 'Barlow', system-ui, sans-serif;
+  --r-sm: 6px;
+  --r: 8px;
+  --r-lg: 12px;
+  --r-xl: 14px;
+  --shadow-sm: 0 1px 2px rgba(29, 31, 34, .06);
+  --shadow: 0 1px 2px rgba(29, 31, 34, .05), 0 10px 26px -14px rgba(29, 31, 34, .18);
+  --shadow-hover: 0 2px 4px rgba(29, 31, 34, .06), 0 24px 44px -22px rgba(29, 31, 34, .32);
+  --header-h: 73px;
+}
+body { font-feature-settings: normal; }
+
+/* ---------- Letters ---------- */
+.h2, .hero--v2 .hero__title, .hero--v2 .hero-car__name, .seek__line, .proof__num, .brands__item, .door h3, .step-item__num, .step-item h3,
+.report-card__head b, .reviews__score > b, .jobs h3, .spec-card h3, .fact b, .cm__title, .logo__word, .footer__mark, .price, .cm__price b,
+.hero-car__price, .mini__price, .car-bar__txt b, .car__title, .sold__more, .lb__title { font-family: var(--display); font-stretch: normal; letter-spacing: 0; }
+.h2 { font-weight: 800; font-size: clamp(2.3rem, 4.6vw, 3.4rem); line-height: 1; }
+.h2 em, .hero__title em { font-style: normal; color: var(--blue); letter-spacing: 0; }
+.special .h2 em, .cta-band .h2 em { color: var(--rose); }
+.eyebrow { gap: 0; margin-bottom: .5rem; font-family: var(--display); font-size: 1.14rem; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--blue); }
+.eyebrow::before, .eyebrow--n::before, .special .eyebrow--n::before, .eyebrow--light.eyebrow--n::before { content: none; }
+.eyebrow--n { counter-increment: none; }
+.eyebrow--light, .special .eyebrow, .cm__side .eyebrow--light { color: var(--rose); }
+.cm__side .eyebrow { font-family: var(--font); font-size: .86rem; font-weight: 600; color: var(--muted); }
+
+/* ---------- Knoppen ---------- */
+.btn { height: 48px; padding: 0 1.3rem; border-radius: 8px; font-size: 1rem; font-weight: 700; letter-spacing: 0; }
+.btn--lg { height: 56px; padding: 0 1.5rem; font-size: 1.06rem; }
+.btn--sm { height: 40px; padding: 0 1rem; border-radius: 6px; font-size: .94rem; }
+.btn--lg > .icon--arrow, .btn--white.btn--lg > .icon--arrow, .btn--outline.btn--lg > .icon--arrow { box-sizing: border-box; width: 1.15em; height: 1.15em; padding: 0; margin: 0; border-radius: 0; background: none; color: inherit; }
+.btn--lg:hover > .icon--arrow { transform: translateX(3px); }
+.btn--primary, .btn--primary:hover:not(:disabled) { box-shadow: none; }
+.btn--outline, .cm__side .btn--outline, .modal .btn--outline, .sheet .btn--outline, .car-bar .btn--outline { border: 2px solid var(--text); background: #fff; color: var(--text); }
+.btn--outline:hover { border-color: var(--text); background: var(--bg); }
+.btn--glass { border: 2px solid rgba(255, 255, 255, .55); background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.btn--glass:hover { border-color: #fff; background: rgba(255, 255, 255, .1); }
+.special .btn--outline { border: 2px solid rgba(255, 255, 255, .55); background: transparent; color: #fff; }
+.special .btn--outline:hover { border-color: #fff; background: rgba(255, 255, 255, .1); }
+.icon-btn { border-radius: 8px; background: #fff; }
+.link { font-weight: 700; }
+
+/* ---------- Donkere balk bovenaan en de kop ---------- */
+.topbar { background: var(--ink-2); color: #c9cbd0; font-size: .88rem; }
+.topbar__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 22px; min-height: 40px; padding-block: 7px; }
+.topbar .head-status { display: inline-flex; height: auto; padding: 0; border-radius: 0; background: none; color: #c9cbd0; font-size: .88rem; font-weight: 500; }
+.topbar .head-status:hover { background: none; color: #fff; }
+.topbar__tel { display: flex; flex-wrap: wrap; gap: 2px 22px; }
+.topbar__tel a { white-space: nowrap; transition: color .2s; }
+.topbar__tel a:hover { color: #fff; }
+.topbar__tel b { color: #fff; font-weight: 700; }
+.header, .header.scrolled { top: 0; padding-top: 0; border-bottom: 1px solid var(--line); background: #fff; pointer-events: auto; }
+.header__inner, .header.scrolled .header__inner { overflow: visible; height: 72px; padding: 0; border: 0; border-radius: 0; background: none; backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; }
+.header__inner::after { content: none; }
+.header .logo__word { font-weight: 800; font-size: 1.95rem; line-height: 1; }
+.logo--lg .logo__word { font-weight: 800; font-size: 2.3rem; }
+.nav a { padding: .5rem .7rem; border-radius: 6px; font-size: 1rem; font-weight: 600; color: var(--text); }
+.nav a:hover, .nav a.active { background: var(--bg); color: var(--blue); }
+.header .icon-btn { width: 46px; height: 46px; border: 2px solid var(--text); border-radius: 8px; background: #fff; }
+.header .icon-btn:hover { background: var(--bg); }
+.lang, .lang__btn { border-radius: 6px; }
+.lang--head { background: var(--bg); }
+.lang__btn { font-weight: 700; letter-spacing: .02em; }
+@media (max-width: 1320px) and (min-width: 1181px) { .header__inner { gap: 1.2rem; padding-left: 0; } .header .logo__word { font-size: 1.8rem; } .nav a { padding-inline: .55rem; } }
+@media (max-width: 640px) {
+  :root { --header-h: 65px; }
+  .header__inner, .header.scrolled .header__inner { height: 64px; padding: 0; }
+  .header .logo__word { font-size: 1.7rem; }
+  .header .icon-btn { width: 44px; height: 44px; }
+  .topbar { font-size: .8rem; }
+  .topbar .head-status { font-size: .8rem; }
+  .topbar__tel { gap: 2px 14px; }
+}
+@media (max-width: 380px) { .header .logo__word { font-size: 1.5rem; } .header__inner { gap: .6rem; padding-left: 0; } }
+
+/* ---------- Hero: donker vlak met bordeaux gloed ---------- */
+.hero--v2 { overflow: visible; padding: clamp(36px, 5vw, 70px) 0 0; color: #fff;
+  background: radial-gradient(58% 85% at 90% 28%, rgba(138, 30, 59, .42), rgba(138, 30, 59, 0) 70%) top / 100% calc(100% - 60px) no-repeat, linear-gradient(var(--ink), var(--ink)) top / 100% calc(100% - 60px) no-repeat; }
+.hero--v2::before { content: none; }
+.hero--v2 .eyebrow { color: var(--rose); }
+.hero--v2 .hero__title { font-weight: 800; font-size: clamp(2.9rem, 6vw, 4.75rem); line-height: .95; color: #fff; }
+.hero--v2 .hero__title em { color: var(--rose); }
+.hero--v2 .hero__lead { margin: 1.4rem 0 1.9rem; font-size: 1.18rem; color: #c9cbd0; }
+.hero--v2 .hero__rating { color: #c9cbd0; }
+.hero--v2 .hero__rating b, .hero--v2 .hero__rating:hover { color: #fff; }
+.hero--v2 .btn--outline { border: 2px solid rgba(255, 255, 255, .55); background: transparent; color: #fff; }
+.hero--v2 .btn--outline:hover { border-color: #fff; background: rgba(255, 255, 255, .1); }
+.hero__frame { border-radius: 16px; background: var(--ink-2); box-shadow: 0 34px 60px -34px rgba(0, 0, 0, .7), 0 0 0 1px rgba(255, 255, 255, .06); }
+.hero__label { padding: 7px 13px; font-family: var(--font); font-size: .84rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.hero--v2 .hero-car__name { font-weight: 700; font-size: clamp(1.7rem, 2.7vw, 2.3rem); line-height: 1.02; }
+.hero--v2 .hero-car__price { font-weight: 800; font-size: 2.2rem; }
+.hero-car__price small { font-family: var(--font); }
+.hero__tag { border-radius: 12px; }
+.hero__tag-title { font-family: var(--font); font-size: .74rem; font-weight: 700; letter-spacing: .05em; }
+.hero__thumb { border-radius: 10px; background: var(--ink-2); }
+.hero__thumb.is-active { box-shadow: 0 0 0 2px var(--ink), 0 0 0 4px #fff; }
+.hero--v2 .hero__finder { margin-top: clamp(38px, 5vw, 60px); }
+@media (max-width: 1020px) { .hero__tag { box-shadow: none; } }
+@media (max-width: 640px) {
+  .hero--v2 .hero__title { font-size: clamp(2.6rem, 12.6vw, 3.4rem); }
+  .hero--v2 .hero__lead { font-size: 1.06rem; }
+  .hero__frame { border-radius: 14px; }
+  .hero--v2 .hero-car__price { font-size: 1.85rem; }
+}
+
+/* ---------- Zoekzin, cijfers, merken ---------- */
+.seek { padding: 20px 20px 20px 30px; border-radius: 14px; box-shadow: 0 0 0 1px rgba(29, 31, 34, .06), 0 26px 50px -30px rgba(29, 31, 34, .45); }
+.seek__line { font-weight: 700; font-size: clamp(1.5rem, 2.7vw, 2.15rem); line-height: 1.25; }
+.seek__btn { font-style: normal; border-bottom-color: #e2b6c1; }
+.seek__list { border-radius: 10px; }
+.seek__list li { border-radius: 6px; }
+@media (max-width: 640px) { .seek { padding: 20px 16px 16px 18px; border-radius: 14px; } }
+.proof__num { font-weight: 800; font-size: clamp(2.3rem, 4.2vw, 3.2rem); line-height: 1; }
+.brands__label { font-size: .8rem; font-weight: 600; letter-spacing: .06em; }
+.brands__item { font-weight: 700; font-size: 1.3rem; color: var(--text); }
+
+/* ---------- Drie deuren ---------- */
+.door { border-radius: 14px; }
+.door__visual { border-radius: 10px; }
+.door h3 { font-weight: 700; font-size: 1.65rem; line-height: 1.05; }
+.door__visual--plate { background: linear-gradient(135deg, var(--blue-soft), #fff); }
+
+/* ---------- Aanbod ---------- */
+.toolbar { border-radius: 14px; }
+.search { border-radius: 8px; }
+.sort select { border-radius: 8px; }
+.car { padding: 0; border-radius: 14px; overflow: hidden; }
+.car__media { border-radius: 0; }
+.car .fav-btn { top: 10px; right: 10px; border-radius: 8px; }
+.car__body { gap: 12px; padding: 16px 16px 16px; }
+.car__title { font-weight: 700; font-size: 1.4rem; line-height: 1.1; }
+.car__title a:hover { color: var(--blue); }
+.car__head .price, .price { font-weight: 800; font-size: 1.75rem; }
+.car__specs li { border-radius: 5px; background: var(--bg); }
+.car .btn--dark, .fav-item .btn--dark, .cmp-table .btn--dark { background: var(--blue); }
+.car .btn--dark:hover, .fav-item .btn--dark:hover, .cmp-table .btn--dark:hover { background: var(--blue-2); }
+.cmp-btn { border-radius: 6px; }
+.pill { border-radius: 5px; font-weight: 600; }
+.car__photos, .car__peek, .gal__count { border-radius: 6px; }
+.mini { border-radius: 12px; }
+.mini__price { font-weight: 800; font-size: 1.2rem; }
+.mini__txt b { font-family: var(--display); font-weight: 700; font-size: 1.12rem; letter-spacing: 0; }
+
+/* ---------- Werkplaats-check, onderhoud, specialistisch werk ---------- */
+.step-item__num { font-weight: 800; font-size: 1.15rem; }
+.step-item h3 { font-weight: 700; font-size: 1.5rem; }
+.report-card { border-radius: 14px; }
+.report-card__head b { font-weight: 700; font-size: 1.75rem; }
+.special::before { background: radial-gradient(circle, rgba(138, 30, 59, .55), transparent 62%); }
+.spec-card::before { background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 0%), rgba(231, 179, 192, .16), transparent 45%); }
+.spec-card__icon { border-radius: 10px; background: rgba(231, 179, 192, .14); color: var(--rose); }
+.spec-card .link { color: var(--rose); }
+.jobs h3, .spec-card h3 { font-weight: 700; font-size: 1.55rem; }
+
+/* ---------- Reviews, over ons, contact, slotblok, voet ---------- */
+.reviews__score > b { font-weight: 800; font-size: 3.8rem; }
+.review { border-radius: 14px; }
+.fact b { font-weight: 700; font-size: 1.6rem; }
+.fact__icon { border-radius: 10px; }
+.map__pin { box-shadow: 0 0 0 12px rgba(138, 30, 59, .14), 0 0 0 28px rgba(138, 30, 59, .06); }
+.alarm { border-color: #e6c5cd; }
+.cta-band__box { border-radius: 16px; box-shadow: 0 40px 70px -44px rgba(138, 30, 59, .7);
+  background: radial-gradient(70% 120% at 100% 0%, #a93452 0%, rgba(169, 52, 82, 0) 60%), radial-gradient(80% 120% at 0% 100%, #5a1127 0%, rgba(90, 17, 39, 0) 65%), var(--blue); }
+@media (max-width: 640px) { .cta-band__box { border-radius: 14px; } }
+.footer { background: var(--ink-2); }
+.footer .mini-badge { background: var(--blue); }
+.footer__mark { font-weight: 800; }
+
+/* ---------- Wagenvenster en pagina per wagen ---------- */
+.modal { border-radius: 16px; }
+.cm__media { border-radius: 12px; }
+.cm__title { font-weight: 800; font-size: clamp(2rem, 3.2vw, 2.7rem); line-height: 1; }
+.cm--page .cm__title { font-size: clamp(2.2rem, 3.6vw, 3rem); }
+.cm__price b { font-weight: 800; font-size: 2.6rem; }
+.cm--page { border-radius: 16px; }
+.cm--page .cm__side { border-radius: 12px; }
+.car-bar__txt b { font-weight: 800; font-size: 1.5rem; }
+.sold { border-radius: 16px; }
+@media (max-width: 980px) { .cm--page .cm__side { border-radius: 12px; } }
+@media (max-width: 640px) { .modal { border-radius: 0; } .cm--page { border-radius: 14px; } }

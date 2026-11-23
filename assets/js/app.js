@@ -152,7 +152,7 @@
     if (PAGE === 'home') document.title = T('{name} · Occasions en werkplaats in {city}', { name: S.name, city: S.address.city });
     const mf = $('#monthlyFine'); if (mf) mf.hidden = !(S.finance && S.finance.showMonthly);
     const fav = document.querySelector('link[rel=icon]');
-    if (fav) fav.href = 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#1e4fd8"/><text x="32" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="${mono.length > 1 ? 26 : 34}" fill="#fff">${esc(mono)}</text></svg>`);
+    if (fav) fav.href = 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#8a1e3b"/><text x="32" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="${mono.length > 1 ? 26 : 34}" fill="#fff">${esc(mono)}</text></svg>`);
 
     // Structured data for Google (address, phone, opening hours)
     const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -456,7 +456,7 @@
 
   function initTeam() {
     const T = window.TEAM || [];
-    const tones = ['#1e4fd8', '#0b0d12', '#3d6bea', '#4b5563'];
+    const tones = ['#8a1e3b', '#2a2c30', '#a8324f', '#5a5e66'];
     $('#teamGrid').hidden = !T.length;
     $('#teamGrid').innerHTML = T.map((p, i) => `
       <figure class="person reveal">
@@ -1812,7 +1812,7 @@
      Reviews marquee
      ------------------------------------------------------------------ */
   function initReviews() {
-    const colors = ['#1e4fd8', '#0b0d12', '#4b5563', '#1e4fd8', '#0b0d12', '#4b5563'];
+    const colors = ['#8a1e3b', '#2a2c30', '#5a5e66', '#8a1e3b', '#2a2c30', '#5a5e66'];
     const card = (r, i) => `
       <figure class="review">
         <span class="stars" aria-label="5 sterren">★★★★★</span>

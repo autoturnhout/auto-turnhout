@@ -122,7 +122,7 @@ De foto's zijn altijd de originele foto's uit de advertenties. Waar een foto kle
 
 ## Vormgeving
 
-Het uitzicht staat in twee bestanden: `assets/css/styles.css` (de basis) en `assets/css/v2.css` (de huidige stijl: wit, brede vette letter (Archivo), zwevende kop, foto vooraan). Wie de `<link>` naar `v2.css` uit `index.html` haalt, krijgt de vorige stijl terug (de pagina's per wagen daarna opnieuw bouwen).
+Het uitzicht staat in drie bestanden, in deze volgorde geladen: `assets/css/styles.css` (de basis), `assets/css/v2.css` (de opbouw: foto vooraan, kaarten, pagina per wagen) en `assets/css/brand.css` (de huisstijl van Auto Turnhout: antraciet, bordeaux en gebroken wit, met de letters Barlow en Barlow Condensed, zoals op zijn vorige site). Kleuren aanpassen doet u bovenaan in `brand.css`; de variabele `--blue` is de accentkleur. Na een wijziging aan `index.html` de pagina's per wagen opnieuw bouwen.
 
 ## Nummerplaten
 
