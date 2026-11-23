@@ -1,0 +1,65 @@
+{
+  "_uitleg": "TESTBESTAND. Zo ongeveer ziet een lijst zoekertjes eruit (teksten van het 2dehands-profiel van Auto Turnhout, november 2026). Alleen om de koppeling te testen; de echte bron komt van 2dehands.",
+  "listings": [
+    {
+      "id": "m2001", "title": "VW Golf 8 R 2.0 TSI DSG 4 Motion Black Style Akrapovic Pano 2021 + Garantie", "price": 35950, "year": 2021, "mileage": "73.636 km",
+      "description": "Volkswagen golf 8 R 2.0 Tsi 320 pk dsg automaat 4motion van bouwjaar 2021 met 73.636 Km. Auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie. Toegelaten in alle emissie zones.\n\nAuto turnhout is de grootste occasion dealer in de kempen met altijd ruime keuze.",
+      "labels": ["Automaat"], "date": "2026-11-07", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/vw-golf-8-r-2021-2358-1.webp", "https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/vw-golf-8-r-2021-2358-2.webp", "https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/vw-golf-8-r-2021-2358-3.webp"]
+    },
+    {
+      "id": "m2002", "title": "Citroen C4 Cactus 1.2i Airbump Navi, Airco + Garantie", "priceText": "Gereserveerd", "year": 2015, "mileage": "209.000 km",
+      "description": "Citroen c4 cactus 1.2I 81 pk airbump van bouwjaar 2015 met 209.000 Km. Gereviseerde motor en distributie vervangen in onze garage. Toegelaten in alle emissie zones auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie.",
+      "labels": ["Nieuw Binnen", "Financiering mogelijk", "Alle milieu/emissie zones"], "date": "2026-11-19", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/citroen-c4-cactus-1-2i-2015-4250-1.webp"]
+    },
+    {
+      "id": "m2003", "title": "Peugeot 2008 1.2i Blue Lion Automaat Airco, Navi + Garantie", "priceText": "Gereserveerd", "year": 2017, "mileage": "96.000 km",
+      "description": "Peugeot 2008 1.2I 110 pk blue lion automaat van bouwjaar 2017 met 96.000 Km van de eerste eigenaar. Distributie recent vervangen. Toegelaten in alle emissie zones auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie.",
+      "labels": ["Automaat", "Financiering mogelijk", "Dealer onderhouden", "Alle milieu/emissie zones"], "date": "2026-11-19", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/peugeot-2008-1-2i-blue-2017-3202-1.webp"]
+    },
+    {
+      "id": "m2004", "title": "Renault Kangoo 1.2i 2007 5 Pers Gekeurd + Garantie", "priceText": "€ 3.450,-", "year": 2007, "mileage": "224.000 km",
+      "description": "Renault kangoo 1.2I 74 pk 5 persoons van bouwjaar 2007 met 224.000 Km. Auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie. Proper voor zijn leeftijd.",
+      "labels": ["Nieuw Binnen", "Financiering mogelijk", "Alle milieu/emissie zones"], "date": "2026-11-19", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/renault-kangoo-1-2i-5-2007-1624-1.webp"]
+    },
+    {
+      "id": "m2005", "title": "VW Golf GTI 2.0 TSI 302 pk DSG Matrix, Pano + Garantie", "priceText": "€ 25.950,-", "year": 2021, "mileage": "109.117 km",
+      "description": "Volkswagen golf gti 2.0 Tsi 302 pk dsg automaat van bouwjaar 2021 met 109.117 Km. Auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie. Proper van binnen en buiten.",
+      "labels": ["Nieuw Binnen", "Financiering mogelijk", "Alle milieu/emissie zones"], "date": "2026-11-19", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/volkswagen-golf-gti-2-0-2021-1-1.webp"]
+    },
+    {
+      "id": "m2006", "title": "Dacia Sandero 1.2 TCe 2015 Al Gekeurd v Verkoop + Garantie", "priceText": "€ 4.450,-", "year": 2015, "mileage": "99.000 km",
+      "description": "Dacia sandero 1.2 Tce 73 pk van bouwjaar 2015 met 99.000 Km. De ideale starters auto, goedkoop in taks en verzekering. Auto is al gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie.",
+      "labels": ["Gekeurd v Verkoop", "Financiering mogelijk", "Alle milieu/emissie zones"], "date": "2026-11-19", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/dacia-sandero-1-2-tce-2015-0500-1.webp"]
+    },
+    {
+      "id": "m2007", "title": "Opel Astra Cabrio 1.6i 2007 173.000 km Export", "priceText": "€ 1.250,-", "year": 2007, "mileage": "173.000 km",
+      "description": "Opel astra 1.6I cabrio van bouwjaar 2007 met 173.000 Km. Auto is een inname auto voor export of opmaak. Dak werkt niet. Rijd en start goed.",
+      "labels": ["Nieuw Binnen", "Financiering mogelijk"], "date": "2026-11-18", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/opel-astra-cabrio-1-6i-2007-9362-1.webp"]
+    },
+    {
+      "id": "m2008", "title": "Hyundai Tucson 1.7 CRDI Automaat Navi, Pano + Garantie", "priceText": "€ 15.950,-", "year": 2018, "mileage": "162.000 km",
+      "description": "Hyundai tucson 1.7 Crdi automaat 141 pk van bouwjaar 2018 met 162.000 Km van de eerste eigenaar. Auto is vol opties. Auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie.",
+      "labels": ["Automaat", "Financiering mogelijk", "Alle milieu/emissie zones"], "date": "2026-11-18", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/hyundai-tucson-1-7-crdi-2018-1050-1.webp"]
+    },
+    {
+      "id": "m2009", "title": "Peugeot 307 1.6i Airco 63.000 km Blanco Gekeurd v Verk", "priceText": "Gereserveerd", "year": 2003, "mileage": "63.083 km",
+      "description": "Peugeot 307 1.6I van bouwjaar 2003 met 63.000 Km van de eerste eigenaar. De ideale starters auto. Auto is blanco gekeurd voor verkoop tot 10-2028 ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie.",
+      "labels": ["Blanco Gekeurd", "Financiering mogelijk", "Dealer onderhouden", "Alle milieu/emissie zones"], "date": "2026-11-17", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/peugeot-307-1-6i-2003-1396-1.webp"]
+    },
+    {
+      "id": "m2010", "title": "Chevrolet Orlando 1.4i Automaat 7 Pers Navi + Garantie", "priceText": "Gereserveerd", "year": 2014, "mileage": "109.000 km",
+      "description": "Chevrolet orlando 1.4I 140 pk automaat 7 persoons van bouwjaar 2014 met 109.000 Km. De ideale ruime gezins auto. Toegelaten in alle emissie zones auto word gekeurd voor verkoop ( inschrijf klaar en gecontroleerd op 80 punten) car-pass en garantie.",
+      "labels": ["Automaat 7 Pers", "Financiering mogelijk", "Dealer onderhouden", "Alle milieu/emissie zones"], "date": "2026-11-17", "url": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+      "images": ["https://autoturnhout.miguelcruz.eu/wp-content/uploads/2026/11/chevrolet-orlando-1-4i-automaat-2014-5757-1.webp"]
+    }
+  ]
+}

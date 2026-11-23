@@ -1,0 +1,6 @@
+# Alleen voor de preview op de eigen computer
+.claude/
+# Logboek en proefbestanden van de sync
+sync/sync.log
+sync/test-stock.json
+*.tmp

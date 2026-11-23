@@ -1,0 +1,49 @@
+# Zet de website online (GitHub Pages) en houdt de voorraad bij:
+# - elke 30 minuten: zoekertjes van Auto Turnhout van 2dehands lezen, de pagina's per wagen opnieuw bouwen, en de site online zetten
+# - bij elke wijziging aan de site (push naar main): de site opnieuw online zetten
+# Eenmalig nodig in GitHub: Settings > Pages > Source: "GitHub Actions".
+name: Site online en voorraad van 2dehands
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Lukt het lezen een keer niet, dan blijft de vorige voorraad staan en gaat de site toch online
+      - name: Zoekertjes lezen
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: node sync/sync-stock.mjs
+      - name: Pagina's per wagen bouwen
+        run: node sync/build-pages.mjs
+      - name: Nieuwe voorraad bewaren
+        run: |
+          git config user.name "voorraad-sync"
+          git config user.email "voorraad-sync@users.noreply.github.com"
+          git add stock.json sync/cache wagen sitemap.xml robots.txt
+          git diff --cached --quiet || git commit -m "Voorraad bijgewerkt van 2dehands"
+          git push || echo "Niet bewaard (er kwam net een andere wijziging binnen); de volgende run probeert opnieuw."
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4

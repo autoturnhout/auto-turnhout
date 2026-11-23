@@ -1,0 +1,43 @@
+{
+  "_uitleg": "Bron van de wagens. Standaard: het openbare 2dehands-profiel van Auto Turnhout (type 2dehands-profile). Komt er ooit een officiële feed van 2dehands of van dealersoftware, zet type dan op 'url' en vul url, itemsPath en fields in.",
+  "source": {
+    "type": "2dehands-profile",
+    "profileUrl": "https://www.2dehands.be/u/auto-turnhout/27476940/",
+    "delayMs": 2500,
+    "maxPages": 6,
+    "refreshDays": 7,
+
+    "url": "",
+    "file": "sync/sample-feed.json",
+    "format": "auto",
+    "headers": { "Authorization": "Bearer ${TWEEDEHANDS_TOKEN}" },
+    "itemsPath": "listings"
+  },
+  "fields": {
+    "id": "id",
+    "title": "title",
+    "description": "description",
+    "price": "price",
+    "priceText": "priceText",
+    "year": "year",
+    "km": "mileage",
+    "fuel": "fuel",
+    "gearbox": "transmission",
+    "brand": "brand",
+    "model": "model",
+    "body": "body",
+    "doors": "doors",
+    "hp": "power",
+    "color": "color",
+    "images": "images",
+    "url": "url",
+    "date": "date",
+    "labels": "labels"
+  },
+  "imageUrlField": "url",
+  "_siteUrl": "Adres van de website, zonder / op het einde. Nodig voor de sitemap en voor de voorvertoning van gedeelde links.",
+  "siteUrl": "https://www.autoturnhout.be",
+  "out": "stock.json",
+  "minCars": 5,
+  "maxDropPercent": 60
+}

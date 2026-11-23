@@ -1,0 +1,3 @@
+{
+  "_uitleg": "Extra's per wagen die niet in het 2dehands-zoekertje staan. Sleutel = id van de wagen in stock.json (bv. skoda-kodiaq-2025-m...). Bv. { \"featured\": true } voor de wagen van de week, of meetwaarden: { \"check\": { \"brakesFront\": 80, \"tyres\": 6.5 } }. Zonder featured kiest de site zelf de nieuwste wagen vanaf € 15.000."
+}
