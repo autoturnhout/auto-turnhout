@@ -36,7 +36,7 @@
   },
   "imageUrlField": "url",
   "_siteUrl": "Adres van de website, zonder / op het einde. Nodig voor de sitemap en voor de voorvertoning van gedeelde links.",
-  "siteUrl": "https://ilyasbenamer007-wq.github.io/auto-turnhout",
+  "siteUrl": "https://autoturnhout.github.io/auto-turnhout",
   "out": "stock.json",
   "minCars": 5,
   "maxDropPercent": 60

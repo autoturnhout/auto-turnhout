@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ilyasbenamer007-wq.github.io/auto-turnhout/sitemap.xml
+Sitemap: https://autoturnhout.github.io/auto-turnhout/sitemap.xml
