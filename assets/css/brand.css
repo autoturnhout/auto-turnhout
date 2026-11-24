@@ -204,3 +204,25 @@ body { font-feature-settings: normal; }
 .sold { border-radius: 16px; }
 @media (max-width: 980px) { .cm--page .cm__side { border-radius: 12px; } }
 @media (max-width: 640px) { .modal { border-radius: 0; } .cm--page { border-radius: 14px; } }
+
+/* ---------- Kleine afwerking (verandert niets aan de huisstijl) ---------- */
+/* De dunne bordeaux lijn onder de kop: groeit mee terwijl u naar beneden scrolt. */
+.header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: var(--blue); transform: scaleX(var(--read, 0)); transform-origin: left; transition: transform .15s linear; pointer-events: none; }
+/* Zachte schaduw onder de kop zodra de pagina beweegt. */
+.header { transition: box-shadow .3s; }
+.header.scrolled { box-shadow: 0 14px 30px -22px rgba(29, 31, 34, .5); }
+/* Menu: een dun lijntje onder het woord in plaats van een grijs blokje. */
+.nav a { position: relative; }
+.nav a::after { content: ""; position: absolute; left: .7rem; right: .7rem; bottom: .22rem; height: 2px; border-radius: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+.nav a:hover, .nav a.active { background: none; color: var(--blue); }
+.nav a:hover::after, .nav a.active::after { transform: scaleX(1); }
+@media (max-width: 1320px) and (min-width: 1181px) { .nav a::after { left: .55rem; right: .55rem; } }
+/* De melding "voorbeeldversie" rustig in de donkere balk, niet meer geel. */
+.demo-bar { border-bottom: 1px solid rgba(255, 255, 255, .08); background: #141517; color: #a3a6ad; font-size: .78rem; }
+.demo-bar strong { color: #fff; font-weight: 600; }
+/* Streepje tussen de twee telefoonnummers bovenaan. */
+@media (min-width: 641px) { .topbar__tel a + a { padding-left: 22px; border-left: 1px solid rgba(255, 255, 255, .16); } }
+/* Bordeaux lijn boven de voet, schuifbalk in de kleuren van de site. */
+.footer { border-top: 3px solid var(--blue); }
+html { scrollbar-color: #b7b3ab var(--bg); }
+@media (prefers-reduced-motion: reduce) { .header::after, .nav a::after { transition: none; } }
